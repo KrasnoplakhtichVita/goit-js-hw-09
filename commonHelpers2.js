@@ -1,0 +1,2 @@
+import"./assets/styles-2bf9f76d.js";const e=document.querySelector(".feedback-form"),l="feedback-form-state",{email:t,message:a}=e.elements,o=JSON.parse(localStorage.getItem(l));s();e.addEventListener("input",m=>{const r={email:t.value.trim(),message:a.value.trim()};localStorage.setItem(l,JSON.stringify(r))});function s(){o&&(t.value=o.email,a.value=o.message)}e.addEventListener("submit",m=>{m.preventDefault(),!(t.value===""||a.value==="")&&(console.log({email:t.value,message:a.value}),localStorage.removeItem(l),e.reset())});
+//# sourceMappingURL=commonHelpers2.js.map
